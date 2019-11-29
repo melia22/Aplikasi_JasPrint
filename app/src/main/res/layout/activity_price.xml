@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PriceActivity"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:orientation="vertical"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:id="@id/satu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorAbutua"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="left"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/homejp"/>
+
+
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="29dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/price"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cdcdcd"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Harga Print/Lembar"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="F4    :Rp 500"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="145dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="A4    :Rp 300"/>
+
+        <TextView
+            android:layout_marginLeft="145dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="A3    :Rp 250"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            android:background="@color/colorAbutua"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Harga Jilid                                Rp 3.000"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            android:background="@color/colorAbutua"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Ongkos Pengiriman                Rp 2.000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#cdcdcd"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Waktu Operasional JasPrint"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            android:background="@color/colorAbutua"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:layout_height="match_parent"
+            android:text="Senin-Kamis        :06.00-17.00"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:text="Jumat-Sabtu        :06.00-15.00"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

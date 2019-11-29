@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#ffff">
+
+    <ScrollView
+        android:id="@+id/orderpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@id/satu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorAbutua">
+
+            <Button
+                android:id="@+id/homepage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/homejp"/>
+
+            <LinearLayout
+                android:id="@+id/satu"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAbutua"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Order"
+                    android:textColor="#000"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:typeface="sans"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/printer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAbudasar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text=" Silahkan Masukkan Berkas Anda"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textAllCaps="false"
+                    android:text="Browser..."
+                    android:textColor="#000"
+                    android:background="@color/colorAbutua"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Pesanan "
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="visible"
+                android:background="@color/colorAbutua"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kertas"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#000"
+                    android:text="A4"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#000"
+                    android:text="F4"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:textColor="#000"
+                    android:text="A3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Warna Jilid"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="180dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_height="70dp"
+                    android:background="#ffff"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Alamat Pengiriman :"/>
+
+            <EditText
+                android:layout_width="380dp"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:background="#ffff"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="15sp"
+                android:textColor="#ffff"
+                android:text="Kirim"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penting!"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:visibility="visible"
+            android:background="@color/colorAbutua"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Sebelum melakukan pengiriman data, pastikan data yang Anda kirim sudah benar."
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*Kami tidak bertanggung jawab atas kesalah data yang telah dicetak."
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
